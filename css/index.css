@@ -1,4 +1,8 @@
-/* .body{display:flex;} */
+@font-face {
+    font-family: "conventry-font-style";
+    src: url(../fonts/SourceHanSansCN-Regular.ttf);
+}
+
 
 #header {
     background-image: url(../images/头图背景.png);
@@ -20,7 +24,37 @@
     justify-content: center;
     grid-gap: 25px;
 }
+
 .left-side {
+    font-family: conventry-font-style, sans-serif;
+    font-style: normal;
     font-size: 7px;
-    background-color: green;
 }
+
+.left-side article {
+    margin-bottom: 50px;
+}
+
+.logo-title {
+    margin: auto;
+    vertical-align: baseline;
+}
+
+.logo-title img {
+    /* vertical-align: top; */
+    /* margin-right: 5px; */
+}
+
+.logo-title {
+    /* line-height: 1px; */
+}
+
+.article-title span {
+    font-size: 12px;
+    margin-top:11px;
+}
+
+
+
+
+
