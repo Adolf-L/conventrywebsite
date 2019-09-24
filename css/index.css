@@ -5,10 +5,12 @@
 
 
 #header {
+    display: absolute;
     background-image: url(../images/头图背景.png);
     height: 250px;
     width: 960px;
     margin: 0 auto;
+    top: 0;
 }
 
 #logo {
@@ -20,7 +22,7 @@
 .wrapper-grid {
     margin: 47px;
     display: grid;
-    grid-template-columns:repeat(2, 295px);
+    grid-template-columns: repeat(2, 295px);
     justify-content: center;
     grid-gap: 25px;
 }
@@ -35,26 +37,45 @@
     margin-bottom: 50px;
 }
 
-.logo-title {
-    margin: auto;
-    vertical-align: baseline;
+.logo-title img span {
+    /* float: left;
+    text-align: center;
+    clear: none; */
+    vertical-align: middle;
+    display: inline-block;
+    /* font-size: 12px; */
+    /* float: none; */
 }
 
-.logo-title img {
-    /* vertical-align: top; */
-    /* margin-right: 5px; */
+/* .logo-title img {
+    vertical-align: top;
+    margin-right: 5px;
 }
 
 .logo-title {
-    /* line-height: 1px; */
-}
+    line-height: 1px;
+} */
 
 .article-title span {
     font-size: 12px;
-    margin-top:11px;
 }
 
+.logo-title span {
+    font-size: 12px;
+}
 
+.conventry-rank {
+    background-image: url(../images/获奖排名底图@2x.png);
+    height: 575px;
+}
 
-
-
+.rank-info li {
+    width: 265px;
+    height: 28px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 0.6;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
