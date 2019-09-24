@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- bootstrap css文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <title>首页 - 考文垂大学</title>
 </head>
@@ -34,12 +37,14 @@
                 <!-- 文章标题 -->
                 <div class="article-title">
                     <!-- 文章图标标题-->
-                    <div class="logo-title">
+                    <!-- <div class="logo-title">
                         <img src="./images/conventry-logo-colorful.png" alt="" srcset="">
                         <span id="conventry-title">考文垂大学</span>
-                    </div>
+                    </div> -->
+                    <h4>考文垂大学</h4>
+                    <h5>Conventry University</h5>
                     <!-- 文章子标题 -->
-                    <span id="conventry-subtitle">Conventry University</span>
+                    <!-- <span id="conventry-subtitle">Conventry University</span> -->
                 </div>
                 <!-- 文章正文 -->
                 <p>英国考文垂大学位于英国历史名城与工业重镇-考文垂，是一所充满活力的、全球性学府。它不仅有可以追溯至1843年的悠久历史，亦是一所与时俱进的现代化大学。注重问题导向型教学，并且紧密联系行业发展动态，为学生带来最佳留学体验。</p>
@@ -48,9 +53,11 @@
             <!-- 考文垂大学排名信息 -->
             <article class="conventry-rank">
                 <div class="logo-title" id="second-lt">
-                    <img src="./images/conventry-logo-nocolorful.png" alt="" srcset="">
-                    <span id="">获奖排名</span>
+                    <!-- <img src="./images/conventry-logo-nocolorful.png" alt="" srcset=""> -->
+                    <!-- <span id="">获奖排名</span> -->
+                    <h4>获奖排名</h4>
                 </div>
+                
                 <ul class="rank-info">
                     <li>连续5年《卫报》英国大学排名前15名</li>
                     <li>2019年《星期日泰晤士报》年度最佳学生体验大学</li>
@@ -68,29 +75,35 @@
                 </ul>
             </article>
             <!-- 考文垂大学文章信息 -->
-            <article>
+            <article class="conventry-tab-articles">
                 <div class="article-title">
-                    <img src="./images/conventry-logo-colorful.png" alt="" srcset="">
-                    <span id="">为什么选择考文垂大学</span>
+                    <!-- <img src="./images/conventry-logo-colorful.png" alt="" srcset=""> -->
+                    <!-- <span id="">为什么选择考文垂大学</span> -->
+                    <h4>为什么选择考文垂大学</h4>
                 </div>
-                <ul class="different-title" id="myTab" class="nav nav-tabs">
-                    <li><a href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
+                <ul class="different-title" id="myTab">
+                    <li class="active"><a href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
                     <li><a href="#city-location" data-toggle="tab">城市与环境</a></li>
                     <li><a href="#study-experience" data-toggle="tab">最佳的学生体验</a></li>
                 </ul>
-                <div class="tab-pane fade in active" id="industry-connect">
-                    <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知 识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
-                    <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们 提供就业咨询和帮助。</p>
-                </div>
-                <div class="tab-pane fade" id="city-location">
-                    <p>我们的主校区位于英国考文垂，它是一座千年古城，也是英国汽车工业的中心，这里有世界上最大的收藏英制汽车的博物馆。同时，考文垂最近还荣获2021英国文化之城称号，这将为未来的城市发展和学生生活带来更多的福利和机遇。</p>
-                    <p>从考文垂坐火车仅20分钟就可到达伯明翰，1小时到达伦敦。</p>
-                    <p>除了在考文垂市的主校区，为着力于更加便捷的全球性商业环境，考文垂大学在伦敦市中心地带也设立了校区。考文垂大学伦敦校区旨在通过与国际商业环境的紧密接轨与实践，培养学生的综合能力及就业竞争力。</p>
-                </div>
-                <div class="tab-pane fade" id="study-experience">
-                    <p>我们采用一系列灵活的入学日期，同学们可以申请3个不同的入学时间段:1月入学、5月入学或者9月入学。</p>
-                    <p>绝大部分本科课程每年包含一次Add+vantage模块，学生可以根据需求选择学习一门语言或其他行业相关的学习课程。</p>
-                    <p>同时我们的每一位学生还可以选择参与考大的全球领导者计划(Global Leaders Program)，前往世界各地 的跨国组织参观学习，并聆听行业翘楚的客座演讲。包括sir John Egan (前捷豹路虎总裁)和Micheal Foale (NASA宇航员)等。</p>
+                <div id="conventry-tabcontent" class="tab-content">
+                    <div class="tab-pane fade in active" id="industry-connect">
+                        <img src="./images/industry-connect.png" alt="" srcset="" style="width: 295px; height:140; object-fit:cover;">
+                        <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知 识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
+                        <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们 提供就业咨询和帮助。</p>
+                    </div>
+                    <div class="tab-pane fade" id="city-location">
+                        <img src="./images/城市与环境.png" alt="" srcset="" style="width: 295px; height:140; object-fit:cover;">
+                        <p>我们的主校区位于英国考文垂，它是一座千年古城，也是英国汽车工业的中心，这里有世界上最大的收藏英制汽车的博物馆。同时，考文垂最近还荣获2021英国文化之城称号，这将为未来的城市发展和学生生活带来更多的福利和机遇。</p>
+                        <p>从考文垂坐火车仅20分钟就可到达伯明翰，1小时到达伦敦。</p>
+                        <p>除了在考文垂市的主校区，为着力于更加便捷的全球性商业环境，考文垂大学在伦敦市中心地带也设立了校区。考文垂大学伦敦校区旨在通过与国际商业环境的紧密接轨与实践，培养学生的综合能力及就业竞争力。</p>
+                    </div>
+                    <div class="tab-pane fade" id="study-experience">
+                        <img src="./images/study-experience.png" alt="" srcset="" style="width: 295px; height:140; object-fit:cover;">
+                        <p>我们采用一系列灵活的入学日期，同学们可以申请3个不同的入学时间段:1月入学、5月入学或者9月入学。</p>
+                        <p>绝大部分本科课程每年包含一次Add+vantage模块，学生可以根据需求选择学习一门语言或其他行业相关的学习课程。</p>
+                        <p>同时我们的每一位学生还可以选择参与考大的全球领导者计划(Global Leaders Program)，前往世界各地 的跨国组织参观学习，并聆听行业翘楚的客座演讲。包括sir John Egan (前捷豹路虎总裁)和Micheal Foale (NASA宇航员)等。</p>
+                    </div>
                 </div>
             </article>
         </div>
@@ -114,9 +127,9 @@
     <!--浮动条  -->
     <div class="side-toolbar">
         <ul>
-            <li><button>关注我们</button></li>
-            <li><button>微博</button></li>
-            <li><button>微信</button></li>
+            <li><a href="">关注<br>我们</a></li>
+            <li><a href=""><img src="./images/weibo@2x.png" alt="" srcset=""><br>微博</a></li>
+            <li><a href=""><img src="./images/wechat@2x.png" alt="" srcset=""><br>微信</a></li>
         </ul>
     </div>
 
@@ -134,11 +147,7 @@
 
     <!-- 点击响应 -->
     <script>
-        $('#myTab a').click(function(e) {
-            e.preventDefault()
-            $(this).tab('show');
-            console.log('hello');
-        })
+        $('#myTab li:eq(1) a').tab('show');
     </script>
 </body>
 

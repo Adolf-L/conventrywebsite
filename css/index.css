@@ -5,6 +5,12 @@
 
 body {
     margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+p {
+    font-size: 12px;
 }
 
 #header {
@@ -33,7 +39,7 @@ body {
 .left-side {
     font-family: conventry-font-style, sans-serif;
     font-style: normal;
-    font-size: 7px;
+    font-size: 8px;
 }
 
 .left-side article {
@@ -53,11 +59,13 @@ body {
 /* .logo-title img {
     vertical-align: top;
     margin-right: 5px;
-}
-
-.logo-title {
-    line-height: 1px;
 } */
+
+.logo-title h4{
+    /* line-height: 1px;
+     */
+     color: #CCCCCC;
+} 
 
 .article-title span {
     font-size: 12px;
@@ -117,45 +125,95 @@ body {
 
 .different-title {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0 auto; */
+    
+    padding: 0px;
     /* float: left; */
     /* display: inline; */
+    /* margin-top: 31px; */
+    margin-bottom: 20px;
 }
 
 .different-title li {
     display: inline-block;
     /* float: left; */
-
     height: 25px;
-    width: 86px;
+    width: 30%;
 
-    margin-right: 11px;
-    background-color: #0070BA;
+    margin-right: 5px;
+    background-color: #CCCCCC;
+    margin-left: 0.2px;
 
     text-align: center;
     line-height: 25px;
+}
+
+
+.different-title li a {
+    text-decoration: none;
+    color: white;
+    
+    display: block;
+    font-size: 10px;
 
 }
+
+.different-title li:focus-within {
+    background-color: #0070BA;
+}
+
+#conventry-tabcontent img {
+    margin-bottom: 10px;
+}
+
+#conventry-tabcontent div img {
+    height: 140px;
+    width: 295px;
+}
+
+.side-toolbar {
+    position: fixed;
+}
+
 
 .side-toolbar ul {
     list-style: none;
     float: right;
+    background: #CCCCCC;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
-.side-toolbar li {
-    border-block-color: black;
+.side-toolbar ul li {
+    padding: 4px 6px;
+    /* width: 40px; */
+    color: #CCCCCC;
+}
+
+.side-toolbar ul li:focus-within {
+    background: #0070BA;
+}
+
+.side-toolbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+.side-toolbar ul li a img {
+    height: 12px;
+    width: 14px;
 }
 
 footer {
     text-align: center;
-    width: 960px;
+    width: 100%;
     height: 60px;
     background: rgba(236, 236, 236, 1);
-    /* line-height: 60px; */
-   margin: 0 auto;
-
-   
+    bottom: 0;
+    position: absolute;
 }
 
 footer p {
@@ -166,4 +224,5 @@ footer p {
     vertical-align: middle;
     display: inline-block;
 
+    padding: 12px;
 }
