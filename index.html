@@ -73,14 +73,25 @@
                     <img src="./images/conventry-logo-colorful.png" alt="" srcset="">
                     <span id="">为什么选择考文垂大学</span>
                 </div>
-                <ul class="different-title">
-                    <li><a href="">紧密的工业连接</a></li>
-                    <li><a href="">城市与环境</a></li>
-                    <li><a href="">最佳的学生体验</a></li>
+                <ul class="different-title" id="myTab" class="nav nav-tabs">
+                    <li><a href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
+                    <li><a href="#city-location" data-toggle="tab">城市与环境</a></li>
+                    <li><a href="#study-experience" data-toggle="tab">最佳的学生体验</a></li>
                 </ul>
-                <p>我们的主校区位于英国考文垂，它是一座千年古城，也是英国汽车工业的中心，这里有世界上最大的收藏英制汽车的博物馆。同时，考文垂最近还荣获2021英国文化之城称号，这将为未来的城市发展和学生生活带来更多的福利和机遇。</p>
-                <p>从考文垂坐火车仅20分钟就可到达伯明翰，1小时到达伦敦。</p>
-                <p>除了在考文垂市的主校区，为着力于更加便捷的全球性商业环境，考文垂大学在伦敦市中心地带也设立了校区。考文垂大学伦敦校区旨在通过与国际商业环境的紧密接轨与实践，培养学生的综合能力及就业竞争力。</p>
+                <div class="tab-pane fade in active" id="industry-connect">
+                    <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知 识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
+                    <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们 提供就业咨询和帮助。</p>
+                </div>
+                <div class="tab-pane fade" id="city-location">
+                    <p>我们的主校区位于英国考文垂，它是一座千年古城，也是英国汽车工业的中心，这里有世界上最大的收藏英制汽车的博物馆。同时，考文垂最近还荣获2021英国文化之城称号，这将为未来的城市发展和学生生活带来更多的福利和机遇。</p>
+                    <p>从考文垂坐火车仅20分钟就可到达伯明翰，1小时到达伦敦。</p>
+                    <p>除了在考文垂市的主校区，为着力于更加便捷的全球性商业环境，考文垂大学在伦敦市中心地带也设立了校区。考文垂大学伦敦校区旨在通过与国际商业环境的紧密接轨与实践，培养学生的综合能力及就业竞争力。</p>
+                </div>
+                <div class="tab-pane fade" id="study-experience">
+                    <p>我们采用一系列灵活的入学日期，同学们可以申请3个不同的入学时间段:1月入学、5月入学或者9月入学。</p>
+                    <p>绝大部分本科课程每年包含一次Add+vantage模块，学生可以根据需求选择学习一门语言或其他行业相关的学习课程。</p>
+                    <p>同时我们的每一位学生还可以选择参与考大的全球领导者计划(Global Leaders Program)，前往世界各地 的跨国组织参观学习，并聆听行业翘楚的客座演讲。包括sir John Egan (前捷豹路虎总裁)和Micheal Foale (NASA宇航员)等。</p>
+                </div>
             </article>
         </div>
 
@@ -117,6 +128,18 @@
 
     <!-- 底部脚步加载 -->
     <script src="./js/index.js"></script>
+    <!-- bootstarp 框架 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- 点击响应 -->
+    <script>
+        $('#myTab a').click(function(e) {
+            e.preventDefault()
+            $(this).tab('show');
+            console.log('hello');
+        })
+    </script>
 </body>
 
 </html>

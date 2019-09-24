@@ -3,6 +3,9 @@
     src: url(../fonts/SourceHanSansCN-Regular.ttf);
 }
 
+body {
+    margin: 0;
+}
 
 #header {
     display: absolute;
@@ -150,12 +153,17 @@ footer {
     height: 60px;
     background: rgba(236, 236, 236, 1);
     /* line-height: 60px; */
-    margin: 0 auto;
+   margin: 0 auto;
+
+   
 }
 
 footer p {
     font-family: conventry-font-style, sans-serif;
     font-style: normal;
-    font-size: 8px;
+    font-size: 12px;
+
+    vertical-align: middle;
+    display: inline-block;
 
 }
