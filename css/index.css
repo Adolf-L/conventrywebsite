@@ -69,6 +69,24 @@
     height: 575px;
 }
 
+#second-lt {
+    position: relative;
+    padding-left: 16px;
+    padding-top: 43px;
+
+}
+
+.rank-info {
+    padding-left: 16px;
+    /* position: relative; */
+    margin-top: 27px;
+
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .rank-info li {
     width: 265px;
     height: 28px;
@@ -77,5 +95,66 @@
     color: white;
     margin-bottom: 5px;
     text-align: center;
-    
+    display: inline-block;
+    line-height: 28px;
+}
+
+.rank-logo {
+    list-style: none;
+    margin-top: 24px;
+    /* ul 占用 5px 所以 29-5=24px*/
+    margin-bottom: 0px;
+    padding-left: 26px;
+    /* padding: 26px; */
+}
+
+.rank-logo li {
+    margin-bottom: 22px;
+}
+
+.different-title {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* float: left; */
+    /* display: inline; */
+}
+
+.different-title li {
+    display: inline-block;
+    /* float: left; */
+
+    height: 25px;
+    width: 86px;
+
+    margin-right: 11px;
+    background-color: #0070BA;
+
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.side-toolbar ul {
+    list-style: none;
+    float: right;
+}
+
+.side-toolbar li {
+    border-block-color: black;
+}
+
+footer {
+    text-align: center;
+    width: 960px;
+    height: 60px;
+    background: rgba(236, 236, 236, 1);
+    /* line-height: 60px; */
+}
+
+footer p {
+    font-family: conventry-font-style, sans-serif;
+    font-style: normal;
+    font-size: 8px;
+
 }
