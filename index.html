@@ -126,12 +126,12 @@
 
     <!--浮动条  -->
     <div class="side-toolbar">
-        <img id="side-bar-pic-one" src="./in-images/QRcode1.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
-        <img id="side-bar-pic-two" src="./in-images/coventry-city-of-culture 拷贝.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
-        <img id="side-bar-pic-three" src="./images/industry-connect.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
+        <img id="side-bar-pic-one" src="" alt="" srcset="" style="height:114px; width:114px;" hidden>
+        <img id="side-bar-pic-two" src="" alt="" srcset="" style="height:114px; width:114px;" hidden>
+        <img id="side-bar-pic-three" src="" alt="" srcset="" style="height:114px; width:114px;" hidden>
         <ul>
-            <li id="side-li-one"><a href="#">关注<br>我们</a></li>
-            <li id="side-li-two"><a href="#"><img src="./in-images/微博.png" alt="" srcset=""><br>微博</a></li>
+            <li id="side-li-one" style="background-color: #0070BA;"><a href="#">关注<br>我们</a></li>
+            <li id="side-li-two"><a href="https://weibo.com/coventryuniversity"><img src="./in-images/微博.png" alt="" srcset=""><br>微博</a></li>
             <li id="side-li-three"><a href="#"><img src="./in-images/微信.png" alt="" srcset=""><br>微信</a></li>
         </ul>
     </div>
@@ -165,15 +165,15 @@
             $('[data-toggle="popover"]').popover();
         });
 
-        $(document).ready(function() {
-            $("#side-li-one").on('mouseover', function() {
-                $("#side-bar-pic-one").show();
-                // console.log('hello error');
-            });
-            $("#side-li-one").on('mouseout', function() {
-                $("#side-bar-pic-one").hide();
-            });
-        });
+        // $(document).ready(function() {
+        //     $("#side-li-one").on('mouseover', function() {
+        //         $("#side-bar-pic-one").show();
+        //         // console.log('hello error');
+        //     });
+        //     $("#side-li-one").on('mouseout', function() {
+        //         $("#side-bar-pic-one").hide();
+        //     });
+        // });
 
         $(document).ready(function() {
             $("#side-li-two").on('mouseover', function() {
