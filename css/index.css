@@ -4,11 +4,18 @@
     src: url(../fonts/SourceHanSansCN-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+      src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: conventry-font-style !important;
+    font-family:Bitstream Vera Serif Bold!important;
+    /* font-size: 2em; */
+
 }
 
 p {
@@ -241,10 +248,6 @@ a:focus {
 } */
 
 .side-toolbar {
-    /* position: sticky; */
-    /* display: inline-flexbox; */
-    /* display: inline; */
-
     position: fixed;
     right: 8px;
     bottom: 30%;
@@ -285,7 +288,6 @@ a:focus {
     width: 14px;
 }
 
-/* ================== */
 
 
 /* ====== 页脚 ====== */
