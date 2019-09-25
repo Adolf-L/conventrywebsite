@@ -293,7 +293,7 @@ footer p {
 /* ====== media query ====== */
 @media (max-width: 600px) {
     #header {
-        background-image: url(../phone-images/头图背景.png);
+        background-image: url(../in-images/头图背景.png);
         height: 200px;
         width: 100%;
         /* margin: 0 auto; */
