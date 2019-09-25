@@ -1,4 +1,3 @@
-
 /* ======= 全局元素CSS ====== */
 @font-face {
     font-family: "conventry-font-style";
@@ -9,22 +8,26 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: conventry-font-style!important;
+    font-family: conventry-font-style !important;
 }
 
 p {
     font-size: 12px;
+    margin-bottom: 1em;
 }
 
 h4 {
-    color: #0070BA!important;
+    color: #0070BA !important;
 }
 
 h5 {
-    color:#999999!important;
+    color: #999999 !important;
 }
 
-a:focus { outline: none; }
+a:focus {
+    outline: none;
+}
+
 /* ================== */
 
 
@@ -56,7 +59,7 @@ a:focus { outline: none; }
 .left-side {
     font-family: conventry-font-style, sans-serif;
     font-style: normal;
-    font-size: 9px;
+    /* font-size: 9px; */
 }
 
 .left-side article {
@@ -64,13 +67,13 @@ a:focus { outline: none; }
 }
 
 /* .logo-title img span { */
-    /* float: left;
+/* float: left;
     text-align: center;
     clear: none; */
-    /* vertical-align: middle;
+/* vertical-align: middle;
     display: inline-block; */
-    /* font-size: 12px; */
-    /* float: none; */
+/* font-size: 12px; */
+/* float: none; */
 /* } */
 
 /* .logo-title img {
@@ -84,7 +87,7 @@ a:focus { outline: none; }
 }  */
 
 #rank-h4 {
-    color: #CCCCCC!important;
+    color: white !important;
 }
 
 /* .article-title span {
@@ -102,44 +105,49 @@ a:focus { outline: none; }
 .conventry-rank {
     background-image: url(../in-images/获奖排名底图.png);
     height: 575px;
+    /* text-align: center; */
 }
 
 #second-lt {
     position: relative;
-    padding-left: 16px;
+    padding-left: 23px;
     padding-top: 43px;
 
 }
 
+
+
 .rank-info {
-    padding-left: 16px;
+    /* padding-left: 16px; */
     /* position: relative; */
     margin-top: 27px;
-
     list-style: none;
     padding: 0;
     margin-bottom: 0;
     text-align: center;
 }
 
-.rank-info li {
-    width: 95%;
-    height: 28px;
+
+
+.rank-info li p {
+    width: 85%;
+    /* height: 28px; */
     background: rgba(0, 0, 0, 1);
     opacity: 0.6;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     text-align: center;
     display: inline-block;
-    line-height: 28px;
+    /* line-height: 30px; */
+    padding: 5px;
 }
 
 .rank-logo {
     list-style: none;
-    margin-top: 24px;
+    margin-top: 15px;
     /* ul 占用 5px 所以 29-5=24px*/
     margin-bottom: 0px;
-    padding-left: 26px;
+    padding-left: 16px;
     /* padding: 26px; */
 }
 
@@ -150,7 +158,7 @@ a:focus { outline: none; }
 .different-title {
     list-style: none;
     /* margin: 0 auto; */
-    
+
     padding: 0px;
     /* float: left; */
     /* display: inline; */
@@ -159,24 +167,24 @@ a:focus { outline: none; }
 }
 
 .different-title li {
-    display: inline-block;
+    display: inline-table;
     /* float: left; */
-    height: 25px;
-    width: 30%;
+    height: 30px;
+    width: 31%;
 
     margin-right: 5px;
     background-color: #CCCCCC;
-    margin-left: 0.2px;
+    /* margin-left: 0.2px; */
 
     text-align: center;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 
 .different-title li a {
     text-decoration: none;
     color: white;
-    
+
     display: block;
     font-size: 10px;
 
@@ -185,23 +193,36 @@ a:focus { outline: none; }
 .different-title li:focus-within {
     background-color: #0070BA;
 }
+
 #conventry-tabcontent {
     position: relative;
 }
 
 #conventry-tabcontent img {
-    margin-bottom: 10px;
+    margin-bottom: 1.5em;
 }
 
-#conventry-tabcontent div img {
-    /* height: 140px; */
+/* 把所有图片设置为居中 */
+.pic-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-middle img {
     width: 330px;
+    height: 196px;
 }
 
-.right-side {
-    /* background: rgba(0, 0, 0, 1); */
-    /* opacity: 0.6;  */
-}
+/* #conventry-tabcontent div img { */
+/* height: 140px; */
+/* width: 330px; */
+/* } */
+
+/* .right-side { */
+/* background: rgba(0, 0, 0, 1); */
+/* opacity: 0.6;  */
+/* } */
 
 
 /* ============ 工具栏 ============ */
@@ -223,7 +244,7 @@ a:focus { outline: none; }
     /* position: sticky; */
     /* display: inline-flexbox; */
     /* display: inline; */
-    
+
     position: fixed;
     right: 8px;
     bottom: 30%;
@@ -263,6 +284,7 @@ a:focus { outline: none; }
     height: 12px;
     width: 14px;
 }
+
 /* ================== */
 
 
@@ -293,26 +315,34 @@ footer p {
 /* ====== media query ====== */
 @media (max-width: 600px) {
     #header {
-        background-image: url(../in-images/头图背景.png);
+        background-image: url(../in-images/phone-c-头图背景.png);
         height: 200px;
         width: 100%;
-        /* margin: 0 auto; */
-
     }
 
-    #logo{
-        position: relative;
+    #header img {
+        /* width: 100%; */
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #logo {
+        position: absolute;
         left: 41px;
-        top:25px;
+        top: 25px;
     }
 
     .wrapper-grid {
-        grid-template-columns: repeat(1,100%);
-        margin:0px;
-        grid-column: 0px!important;
+        grid-template-columns: repeat(1, 100%);
+        margin: 0px;
+        grid-column: 0px !important;
     }
 
-    article h4,h5,img {
+    article h4,
+    h5,
+    img {
         text-align: center;
         /* object-fit: cover; */
     }
@@ -324,11 +354,18 @@ footer p {
 
     .conventry-info img {
         width: 305px;
+        text-align: center;
     }
 
     /* 第二篇文章 */
     .conventry-rank {
         text-align: center;
+    }
+
+    #second-lt {
+        /* /* padding-left: 0px;*/
+        padding-top: 20px;
+        padding-left: 0px;
     }
 
 
@@ -338,17 +375,19 @@ footer p {
     }
 
     .conventry-tab-articles img {
-        width: 305px!important;
+        width: 305px !important;
         /* height: 181px; */
     }
-    .conventry-tab-articles .article-title {
+
+    /* .conventry-tab-articles .article-title {
         margin-bottom: 10px;
-    }
+    } */
 
     .different-title li {
         /* padding: 3px; */
         height: 30px;
         line-height: 30px;
+        width: 31%;
     }
 
     .conventry-tab-articles ul {
@@ -358,21 +397,22 @@ footer p {
     .right-side {
         text-align: center;
     }
-    
+
     #form-title {
         background-color: #0070BA;
-        padding: 3px;
-       
+        padding: 5px;
+
     }
 
-    
+
     #form-h4-title {
-        color: white!important;
+        color: white !important;
     }
 
     #conventry-subtitle {
-        color: white!important;
+        color: white !important;
     }
+
     /* .right-side {
         height: 1000px;
     } */
