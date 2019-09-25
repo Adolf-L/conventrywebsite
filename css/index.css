@@ -7,11 +7,22 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: conventry-font-style!important;
 }
 
 p {
     font-size: 12px;
 }
+
+h4 {
+    color: #0070BA!important;
+}
+
+h5 {
+    color:#999999!important;
+}
+
+a:focus { outline: none; }
 
 #header {
     display: absolute;
@@ -61,19 +72,22 @@ p {
     margin-right: 5px;
 } */
 
-.logo-title h4{
-    /* line-height: 1px;
-     */
+/* .logo-title h4{
+    
      color: #CCCCCC;
-} 
+}  */
+
+#rank-h4 {
+    color: #CCCCCC!important;
+}
 
 .article-title span {
     font-size: 12px;
 }
 
-.logo-title span {
+/* .logo-title span {
     font-size: 12px;
-}
+} */
 
 .conventry-rank {
     background-image: url(../images/获奖排名底图@2x.png);
@@ -161,6 +175,9 @@ p {
 .different-title li:focus-within {
     background-color: #0070BA;
 }
+#conventry-tabcontent {
+    position: relative;
+}
 
 #conventry-tabcontent img {
     margin-bottom: 10px;
@@ -171,10 +188,33 @@ p {
     width: 295px;
 }
 
-.side-toolbar {
-    position: fixed;
-}
 
+
+
+/* ============ 工具栏 ============ */
+
+/* .side-toolbar-pic {
+    position: fixed;
+    right: 50px !important;
+    background-color: #0070BA;
+    bottom: 30%;
+    float: right!important;
+} */
+
+/* .side-toolbar img {
+    display: block;
+    float: right;
+} */
+
+.side-toolbar {
+    /* position: sticky; */
+    /* display: inline-flexbox; */
+    /* display: inline; */
+    
+    position: fixed;
+    right: 8px;
+    bottom: 30%;
+}
 
 .side-toolbar ul {
     list-style: none;
@@ -202,24 +242,32 @@ p {
     font-size: 11px;
 }
 
+.side-toolbar ul li:hover {
+    background: #0070BA;
+}
+
 .side-toolbar ul li a img {
     height: 12px;
     width: 14px;
 }
+/* ================== */
 
+
+/* ====== 页脚 ====== */
 footer {
     text-align: center;
     width: 100%;
     height: 60px;
     background: rgba(236, 236, 236, 1);
     bottom: 0;
-    position: absolute;
+    position: relative;
 }
 
 footer p {
     font-family: conventry-font-style, sans-serif;
     font-style: normal;
     font-size: 12px;
+    color: #999999;
 
     vertical-align: middle;
     display: inline-block;

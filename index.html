@@ -10,13 +10,12 @@
     <!-- 元数据关键字 -->
     <meta name="keywords" content="conventry">
     <!-- CSS links -->
-    <!-- ============ -->
-    <link rel="stylesheet" href="./css/index.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <!-- bootstrap css文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <!-- 自定义的css放在最后 -->
+    <link rel="stylesheet" href="./css/index.css">
 
     <title>首页 - 考文垂大学</title>
 </head>
@@ -55,9 +54,9 @@
                 <div class="logo-title" id="second-lt">
                     <!-- <img src="./images/conventry-logo-nocolorful.png" alt="" srcset=""> -->
                     <!-- <span id="">获奖排名</span> -->
-                    <h4>获奖排名</h4>
+                    <h4 id="rank-h4">获奖排名</h4>
                 </div>
-                
+
                 <ul class="rank-info">
                     <li>连续5年《卫报》英国大学排名前15名</li>
                     <li>2019年《星期日泰晤士报》年度最佳学生体验大学</li>
@@ -83,17 +82,17 @@
                 </div>
                 <ul class="different-title" id="myTab">
                     <li class="active"><a href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
-                    <li><a href="#city-location" data-toggle="tab">城市与环境</a></li>
+                    <li><a href="#city-location" data-toggle="tab" id="autofocus" style="">城市与环境</a></li>
                     <li><a href="#study-experience" data-toggle="tab">最佳的学生体验</a></li>
                 </ul>
                 <div id="conventry-tabcontent" class="tab-content">
                     <div class="tab-pane fade in active" id="industry-connect">
-                        <img src="./images/industry-connect.png" alt="" srcset="" style="width: 295px; height:140; object-fit:cover;">
+                        <img src="./images/industry-connect.png" alt="" srcset="">
                         <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知 识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
                         <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们 提供就业咨询和帮助。</p>
                     </div>
                     <div class="tab-pane fade" id="city-location">
-                        <img src="./images/城市与环境.png" alt="" srcset="" style="width: 295px; height:140; object-fit:cover;">
+                        <img src="./images/城市与环境.png" alt="" srcset="">
                         <p>我们的主校区位于英国考文垂，它是一座千年古城，也是英国汽车工业的中心，这里有世界上最大的收藏英制汽车的博物馆。同时，考文垂最近还荣获2021英国文化之城称号，这将为未来的城市发展和学生生活带来更多的福利和机遇。</p>
                         <p>从考文垂坐火车仅20分钟就可到达伯明翰，1小时到达伦敦。</p>
                         <p>除了在考文垂市的主校区，为着力于更加便捷的全球性商业环境，考文垂大学在伦敦市中心地带也设立了校区。考文垂大学伦敦校区旨在通过与国际商业环境的紧密接轨与实践，培养学生的综合能力及就业竞争力。</p>
@@ -113,7 +112,8 @@
             <div class="article-title">
                 <!-- 文章图标标题 -->
                 <div class="logo-title">
-                    <span id="conventry-title">填写表单</span>
+                    <!-- <span id="conventry-title">填写表单</span> -->
+                    <h4>填写表单</h4>
                 </div>
                 <!-- 文章子标题 -->
                 <h5 id="conventry-subtitle">Fill in Form</h5>
@@ -126,12 +126,20 @@
 
     <!--浮动条  -->
     <div class="side-toolbar">
+        <img id="side-bar-pic-one" src="./images/QRcode1.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
+        <img id="side-bar-pic-two" src="./images/conventry-univercity.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
+        <img id="side-bar-pic-three" src="./images/industry-connect.png" alt="" srcset="" style="height:114px; width:114px;" hidden>
         <ul>
-            <li><a href="">关注<br>我们</a></li>
-            <li><a href=""><img src="./images/weibo@2x.png" alt="" srcset=""><br>微博</a></li>
-            <li><a href=""><img src="./images/wechat@2x.png" alt="" srcset=""><br>微信</a></li>
+            <li id="side-li-one"><a href="#">关注<br>我们</a></li>
+            <li id="side-li-two"><a href="#"><img src="./images/weibo@2x.png" alt="" srcset=""><br>微博</a></li>
+            <li id="side-li-three"><a href="#"><img src="./images/wechat@2x.png" alt="" srcset=""><br>微信</a></li>
         </ul>
     </div>
+
+    <!-- <div class="container">
+  <h3>弹出框实例</h3> <br>
+  <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="一些内容" data-placement="left">鼠标移动到我这</a>
+</div> -->
 
     <!-- 页脚 -->
     <footer class="footer">
@@ -144,10 +152,49 @@
     <!-- bootstarp 框架 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
 
     <!-- 点击响应 -->
     <script>
         $('#myTab li:eq(1) a').tab('show');
+        // 让元素处于聚焦状态
+        document.getElementById("autofocus").focus();
+        // 弹窗
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+
+        $(document).ready(function() {
+            $("#side-li-one").on('mouseover', function() {
+                $("#side-bar-pic-one").show();
+                // console.log('hello error');
+            });
+            $("#side-li-one").on('mouseout', function() {
+                $("#side-bar-pic-one").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#side-li-two").on('mouseover', function() {
+                $("#side-bar-pic-two").show();
+                // console.log('hello error');
+            });
+            $("#side-li-two").on('mouseout', function() {
+                $("#side-bar-pic-two").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#side-li-three").on('mouseover', function() {
+                $("#side-bar-pic-three").show();
+                // console.log('hello error');
+            });
+            $("#side-li-three").on('mouseout', function() {
+                $("#side-bar-pic-three").hide();
+            });
+        });
+    
     </script>
 </body>
 
