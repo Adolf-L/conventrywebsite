@@ -1,3 +1,5 @@
+
+/* ======= 全局元素CSS ====== */
 @font-face {
     font-family: "conventry-font-style";
     src: url(../fonts/SourceHanSansCN-Regular.ttf);
@@ -23,10 +25,13 @@ h5 {
 }
 
 a:focus { outline: none; }
+/* ================== */
+
+
 
 #header {
     display: absolute;
-    background-image: url(../images/头图背景.png);
+    background-image: url(../in-images/头图背景.png);
     height: 250px;
     width: 960px;
     margin: 0 auto;
@@ -42,30 +47,30 @@ a:focus { outline: none; }
 .wrapper-grid {
     margin: 47px;
     display: grid;
-    grid-template-columns: repeat(2, 295px);
+    grid-template-columns: repeat(2, 330px);
     justify-content: center;
-    grid-gap: 25px;
+    grid-gap: 3%;
 }
 
 .left-side {
     font-family: conventry-font-style, sans-serif;
     font-style: normal;
-    font-size: 8px;
+    font-size: 9px;
 }
 
 .left-side article {
     margin-bottom: 50px;
 }
 
-.logo-title img span {
+/* .logo-title img span { */
     /* float: left;
     text-align: center;
     clear: none; */
-    vertical-align: middle;
-    display: inline-block;
+    /* vertical-align: middle;
+    display: inline-block; */
     /* font-size: 12px; */
     /* float: none; */
-}
+/* } */
 
 /* .logo-title img {
     vertical-align: top;
@@ -81,16 +86,20 @@ a:focus { outline: none; }
     color: #CCCCCC!important;
 }
 
-.article-title span {
+/* .article-title span {
     font-size: 12px;
-}
+} */
 
 /* .logo-title span {
     font-size: 12px;
 } */
+.conventry-info img {
+    /* height: ; */
+    width: 330px;
+}
 
 .conventry-rank {
-    background-image: url(../images/获奖排名底图@2x.png);
+    background-image: url(../in-images/获奖排名底图.png);
     height: 575px;
 }
 
@@ -113,7 +122,7 @@ a:focus { outline: none; }
 }
 
 .rank-info li {
-    width: 265px;
+    width: 95%;
     height: 28px;
     background: rgba(0, 0, 0, 1);
     opacity: 0.6;
@@ -184,11 +193,14 @@ a:focus { outline: none; }
 }
 
 #conventry-tabcontent div img {
-    height: 140px;
-    width: 295px;
+    /* height: 140px; */
+    width: 330px;
 }
 
-
+.right-side {
+    /* background: rgba(0, 0, 0, 1); */
+    /* opacity: 0.6;  */
+}
 
 
 /* ============ 工具栏 ============ */
