@@ -28,6 +28,7 @@ a:focus { outline: none; }
 /* ================== */
 
 
+/* ====== 头部元素 ====== */
 
 #header {
     display: absolute;
@@ -284,5 +285,106 @@ footer p {
     vertical-align: middle;
     display: inline-block;
 
-    padding: 12px;
+    padding-top: 12px;
+    margin: 0px;
+}
+
+
+/* ====== media query ====== */
+@media (max-width: 600px) {
+    #header {
+        background-image: url(../phone-images/头图背景.png);
+        height: 200px;
+        width: 100%;
+        /* margin: 0 auto; */
+
+    }
+
+    #logo{
+        position: relative;
+        left: 41px;
+        top:25px;
+    }
+
+    .wrapper-grid {
+        grid-template-columns: repeat(1,100%);
+        margin:0px;
+        grid-column: 0px!important;
+    }
+
+    article h4,h5,img {
+        text-align: center;
+        /* object-fit: cover; */
+    }
+
+    /* 第一篇文章 */
+    .conventry-info {
+        margin: 35px;
+    }
+
+    .conventry-info img {
+        width: 305px;
+    }
+
+    /* 第二篇文章 */
+    .conventry-rank {
+        text-align: center;
+    }
+
+
+    /* 第三篇文章 */
+    .conventry-tab-articles {
+        margin: 35px;
+    }
+
+    .conventry-tab-articles img {
+        width: 305px!important;
+        /* height: 181px; */
+    }
+    .conventry-tab-articles .article-title {
+        margin-bottom: 10px;
+    }
+
+    .different-title li {
+        /* padding: 3px; */
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .conventry-tab-articles ul {
+        text-align: center;
+    }
+
+    .right-side {
+        text-align: center;
+    }
+    
+    .right-side article-title {
+        
+        /* color: #CCCCCC; */
+    }
+
+    #form-title {
+        background-color: #0070BA;
+        padding: 3px;
+       
+    }
+
+    
+    #form-h4-title {
+        color: white!important;
+    }
+
+    #conventry-subtitle {
+        color: white!important;
+    }
+    /* .right-side {
+        height: 1000px;
+    } */
+
+    footer {
+        bottom: 0;
+    }
+
+
 }
