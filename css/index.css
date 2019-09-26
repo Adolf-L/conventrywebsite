@@ -51,14 +51,26 @@ a:focus {
     background-repeat: no-repeat;
     height:300px;
     /* width: 100%; */
+    /* background-image: url(../in-images/logo.png); */
 }
 
 #logo {
     position: relative;
     left: 180px;
     top: 24px;
+    height: 17%;
+
+    display: block;
+}
+
+#logo-two {
+    visibility:hidden;
+    position: relative;
+    left: 180px;
+    top: 24px;
     height: 60px;
 }
+
 
 .wrapper-grid {
     margin: 20px;
@@ -215,8 +227,7 @@ a:focus {
 
 .pic-middle img {
     /* 所有的文章图片 */
-    width: 330px;
-    height: 196px;
+    width: 100%;
 }
 
 /* ============ 工具栏 ============ */
@@ -297,17 +308,26 @@ footer p {
 
     #header img {
         /* width: 100%; */
-        
+       
         width: auto;
         height: auto;
         max-width: 20%;
         max-height: 100%;
     }
 
+
     #logo {
+        visibility: hidden;
         position: absolute;
         left: 41px;
         top: 25px;
+    }
+
+    #logo-two {
+        visibility: visible; 
+        position: relative;
+        left: 50px;
+        top: 24px;
     }
 
     .wrapper-grid {
