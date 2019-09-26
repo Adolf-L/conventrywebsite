@@ -411,6 +411,7 @@ footer p {
     }
 
     .right-side {
+        position: relative;
         text-align: center;
     }
 
