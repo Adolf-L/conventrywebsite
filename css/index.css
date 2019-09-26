@@ -41,7 +41,7 @@ a:focus {
 #header {
     display: absolute;
     /* background-imge: url(../in-images/pc_.pic_hd.jpg); */
-    background-image: url(../in-images/pc_.pic_hd.jpg);
+    background-image: url(../in-images/pc-hd.png);
 
     background-size: 100%;
     background-repeat: no-repeat;
@@ -50,12 +50,11 @@ a:focus {
     /* background-image: url(../in-images/logo.png); */
 }
 
-#logo a img {
-    /* position: relative; */
-    left: 180px;
+#header a img{
+    position: absolute;
+    left: 50px;
     top: 24px;
-    height: 17%;
-
+    /* height: 17%; */
     /* display: block; */
 }
 
@@ -431,8 +430,8 @@ footer p {
     }
 
     footer {
-        margin-top: 100px;
-        bottom: 0;
+        margin-top: 155px;
+        /* bottom: 0; */
     }
 
 }
