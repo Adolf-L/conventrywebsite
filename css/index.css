@@ -332,8 +332,21 @@ footer p {
 
     }
 
+    .rank-info {
+        margin-top: 30px;
+        text-align: center
+    }
+
+    .rank-info ul {
+        margin: 0px auto;
+        padding: 0px;
+        width: 305px;
+    }
+
     .rank-info ul li {
-        margin-bottom: 20px;
+        /* margin: 0px; */
+        margin-bottom: 17px;
+        /* width: 305px; */
     }
 
     #second-lt {

@@ -90,8 +90,8 @@
                     <h4>为什么选择考文垂大学</h4>
                 </div>
                 <ul class="different-title" id="myTab" role="tablist">
-                    <li><a class="active" href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
-                    <li><a class="" href="#city-location" data-toggle="tab" id="autofocus" style="">城市与环境</a></li>
+                    <li><a class="active" id="industry-button" href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
+                    <li><a class="" href="#city-location" data-toggle="tab" >城市与环境</a></li>
                     <li><a class="" href="#study-experience" data-toggle="tab">最佳的学生体验</a></li>
                 </ul>
                 <div id="conventry-tabcontent" class="tab-content">
@@ -168,7 +168,7 @@
     <script>
         $('#myTab li:eq(1) a').tab('show');
         // 让元素处于聚焦状态
-        // document.getElementById("autofocus").focus();
+        
         // 弹窗
         $(document).ready(function() {
             $('[data-toggle="popover"]').popover();
@@ -211,7 +211,7 @@
 
         function openOrcloseWechat() {
             var btn = document.getElementById('side-li-three');
-            console.log(btn);
+            // console.log(btn);
             var isFocus = $("side-li-three").is("focus");
 
             if (isFocus == true) {
@@ -220,10 +220,20 @@
             }
 
             console.log("two");
-
         }
 
-        // 
+        // 点击第一产业
+        // S(document).ready(function() {
+            
+        // });
+        // console.log( document.getElementById('#industry-button').click());
+            // $("")
+        // function clickIndustry() {
+            $("#industry-button")[0].click();
+            console.log($("#industry-button"));
+            document.getElementById("industry-button").focus();
+            // console.log($(#'industry-button')[0]);
+        // }
     </script>
 </body>
 
