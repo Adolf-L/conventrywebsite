@@ -54,13 +54,13 @@ a:focus {
     /* background-image: url(../in-images/logo.png); */
 }
 
-#logo {
-    position: relative;
+#logo a img {
+    /* position: relative; */
     left: 180px;
     top: 24px;
     height: 17%;
 
-    display: block;
+    /* display: block; */
 }
 
 #logo-two {
