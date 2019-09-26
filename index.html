@@ -90,15 +90,15 @@
                     <h4>为什么选择考文垂大学</h4>
                 </div>
                 <ul class="different-title" id="myTab" role="tablist">
-                    <li><a class="active" id="industry-button" href="#industry-connect" data-toggle="tab">紧密的工业连接</a></li>
-                    <li><a class="" href="#city-location" data-toggle="tab" >城市与环境</a></li>
-                    <li><a class="" href="#study-experience" data-toggle="tab">最佳的学生体验</a></li>
+                    <li><a class="active" id="industry-focus" href="#industry-connect" data-toggle="tab" value="industry-focus" onclick="checkFocus(this)">紧密的工业连接</a></li>
+                    <li><a class="" id="city-focus" href="#city-location" data-toggle="tab" onclick="checkFocus(this)">城市与环境</a></li>
+                    <li><a class="" id="study-focus" href="#study-experience" data-toggle="tab" onclick="checkFocus(this)">最佳的学生体验</a></li>
                 </ul>
                 <div id="conventry-tabcontent" class="tab-content">
                     <div class="tab-pane fade active" id="industry-connect">
                         <div class="pic-middle"><img src="./in-images/03-industry.jpg" alt="" srcset=""></div>
-                        <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知 识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
-                        <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们 提供就业咨询和帮助。</p>
+                        <p>我们的课程针对雇主、行业所需的毕业生特质，为学生量身传授所需的知识、技能和专长。大部分的课程，都包括了企业实习模块。</p>
+                        <p>我们的每个学院都设立有专门的求职服务中心，更有针对性地为同学们提供就业咨询和帮助。</p>
                     </div>
                     <div class="tab-pane fade" id="city-location">
                         <div class="pic-middle"><img src="./in-images/04-city.jpg" alt="" srcset=""></div>
@@ -121,8 +121,8 @@
             <div class="article-title" id="form-title">
                 <!-- 文章图标标题 -->
                 <!-- <div class="logo-title"> -->
-                    <!-- <span id="conventry-title">填写表单</span> -->
-                    <h4 id="form-h4-title">填写表单，加入官方招生群</h4>
+                <!-- <span id="conventry-title">填写表单</span> -->
+                <h4 id="form-h4-title">填写表单，加入官方招生群</h4>
                 <!-- </div> -->
                 <!-- 文章子标题 -->
                 <!-- <h5 id="conventry-subtitle">Fill in Form</h5> -->
@@ -168,7 +168,7 @@
     <script>
         $('#myTab li:eq(1) a').tab('show');
         // 让元素处于聚焦状态
-        
+
         // 弹窗
         $(document).ready(function() {
             $('[data-toggle="popover"]').popover();
@@ -224,16 +224,20 @@
 
         // 点击第一产业
         // S(document).ready(function() {
-            
+
         // });
         // console.log( document.getElementById('#industry-button').click());
-            // $("")
+        // $("")
         // function clickIndustry() {
-            $("#industry-button")[0].click();
-            console.log($("#industry-button"));
-            document.getElementById("industry-button").focus();
-            // console.log($(#'industry-button')[0]);
-        // }
+
+        // 处理焦点问题
+        $("#industry-focus")[0].click();
+        document.getElementById("industry-focus").focus();
+
+        function checkFocus(e) {
+            e.focus();
+            console.log(e);
+        }
     </script>
 </body>
 
