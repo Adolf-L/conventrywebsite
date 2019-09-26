@@ -1,13 +1,13 @@
 /* ======= 全局元素CSS ====== */
-@font-face {
+/* @font-face {
     font-family: "conventry-font-style";
     src: url(../fonts/SourceHanSansCN-Regular.ttf);
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Bitstream Vera Serif Bold";
       src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
+} */
 
 body {
     margin: 0;
@@ -35,7 +35,9 @@ a:focus {
     outline: none;
 }
 
-/* ================== */
+
+
+
 
 
 /* ====== 头部元素 ====== */
@@ -60,7 +62,7 @@ a:focus {
     display: grid;
     grid-template-columns: repeat(2, 330px);
     justify-content: center;
-    grid-gap: 3%;
+    grid-gap: 4%;
 }
 
 .left-side {
@@ -73,89 +75,81 @@ a:focus {
     margin-bottom: 50px;
 }
 
-/* .logo-title img span { */
-/* float: left;
-    text-align: center;
-    clear: none; */
-/* vertical-align: middle;
-    display: inline-block; */
-/* font-size: 12px; */
-/* float: none; */
-/* } */
-
-/* .logo-title img {
-    vertical-align: top;
-    margin-right: 5px;
-} */
-
-/* .logo-title h4{
-    
-     color: #CCCCCC;
-}  */
-
 #rank-h4 {
     color: white !important;
 }
 
-/* .article-title span {
-    font-size: 12px;
-} */
+/* ====== 第二部分内容 ====== */
 
-/* .logo-title span {
-    font-size: 12px;
-} */
-.conventry-info img {
-    /* height: ; */
-    width: 330px;
-}
-
+/* 背景 */
 .conventry-rank {
-    background-image: url(../in-images/获奖排名底图.png);
-    height: 575px;
+    background: url(../in-images/获奖排名底图.png)no-repeat;
+    background-size: 100%;
+    height: 600px;
     /* text-align: center; */
 }
 
-#second-lt {
+/* 标题 */
+.logo-title {
     position: relative;
     padding-left: 23px;
     padding-top: 43px;
-
 }
 
-
-
-.rank-info {
-    /* padding-left: 16px; */
-    /* position: relative; */
-    margin-top: 27px;
+/* 排名内容 */
+.rank-info ul {
     list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-    text-align: center;
+    padding-left: 0px;
+
+    /* 和标题对齐 */
+   padding-left: 23px;
+   padding-right: 23px;
+   padding-top: 20px;
+
 }
 
+.rank-info ul li {
 
+    /* 清楚 li 的布局样式 */
+    margin: 0px;
 
-.rank-info li p {
-    width: 85%;
-    /* height: 28px; */
-    background: rgba(0, 0, 0, 1);
-    opacity: 0.6;
+    /* 重新定义布局样式 */
     color: white;
-    margin-bottom: 8px;
+    background-color:rgba(0, 0, 0, 0.5);
     text-align: center;
-    display: inline-block;
-    /* line-height: 30px; */
-    padding: 5px;
+    padding: 1px;
+    margin: 4px;
+
 }
 
-.rank-logo {
+.rank-info ul li p {
+    /* 清除样式 */
+    margin: 0px;
+
+    /*定义样式 */
+    padding: 1px;
+    margin: 2.5px;
+}
+
+.rank-logo ul{
+
+    /* 清除样式 */
     list-style: none;
-    margin-top: 15px;
-    /* ul 占用 5px 所以 29-5=24px*/
-    margin-bottom: 0px;
-    padding-left: 16px;
-    /* padding: 26px; */
+    padding-left: 0px;
+
+    /* 重新设置样式 */
+    padding-left: 23px;
+    margin-top:40px;
+
+}
+
+.rank-logo ul li {
+
+    /* 清除样式 */
+    margin: 0px;
+
+    /* 重新设置样式 */
+    margin-top:13px;
 }
 
 .rank-logo li {
@@ -164,24 +158,18 @@ a:focus {
 
 .different-title {
     list-style: none;
-    /* margin: 0 auto; */
 
     padding: 0px;
-    /* float: left; */
-    /* display: inline; */
-    /* margin-top: 31px; */
     margin-bottom: 20px;
 }
 
 .different-title li {
     display: inline-table;
-    /* float: left; */
     height: 30px;
     width: 31%;
 
     margin-right: 5px;
     background-color: #CCCCCC;
-    /* margin-left: 0.2px; */
 
     text-align: center;
     line-height: 30px;
@@ -201,6 +189,7 @@ a:focus {
     background-color: #0070BA;
 }
 
+
 #conventry-tabcontent {
     position: relative;
 }
@@ -217,35 +206,12 @@ a:focus {
 }
 
 .pic-middle img {
+    /* 所有的文章图片 */
     width: 330px;
     height: 196px;
 }
 
-/* #conventry-tabcontent div img { */
-/* height: 140px; */
-/* width: 330px; */
-/* } */
-
-/* .right-side { */
-/* background: rgba(0, 0, 0, 1); */
-/* opacity: 0.6;  */
-/* } */
-
-
 /* ============ 工具栏 ============ */
-
-/* .side-toolbar-pic {
-    position: fixed;
-    right: 50px !important;
-    background-color: #0070BA;
-    bottom: 30%;
-    float: right!important;
-} */
-
-/* .side-toolbar img {
-    display: block;
-    float: right;
-} */
 
 .side-toolbar {
     position: fixed;
@@ -264,8 +230,7 @@ a:focus {
 
 .side-toolbar ul li {
     padding: 4px 6px;
-    /* width: 40px; */
-    color: #CCCCCC;
+    color: white;
 }
 
 .side-toolbar ul li:focus-within {
@@ -346,7 +311,6 @@ footer p {
     h5,
     img {
         text-align: center;
-        /* object-fit: cover; */
     }
 
     /* 第一篇文章 */
@@ -362,6 +326,14 @@ footer p {
     /* 第二篇文章 */
     .conventry-rank {
         text-align: center;
+        background-image: url(../in-images/获奖排名底图.png);
+        /* background-size: 100%; */
+        height: 680px;
+
+    }
+
+    .rank-info ul li {
+        margin-bottom: 20px;
     }
 
     #second-lt {
@@ -370,6 +342,10 @@ footer p {
         padding-left: 0px;
     }
 
+    .rank-logo ul {
+        /* 清除样式 */
+        padding:0px;
+    }
 
     /* 第三篇文章 */
     .conventry-tab-articles {
@@ -381,15 +357,11 @@ footer p {
         /* height: 181px; */
     }
 
-    /* .conventry-tab-articles .article-title {
-        margin-bottom: 10px;
-    } */
-
     .different-title li {
         /* padding: 3px; */
         height: 30px;
         line-height: 30px;
-        width: 31%;
+        width: 30%;
     }
 
     .conventry-tab-articles ul {
@@ -414,10 +386,6 @@ footer p {
     #conventry-subtitle {
         color: white !important;
     }
-
-    /* .right-side {
-        height: 1000px;
-    } */
 
     footer {
         bottom: 0;
