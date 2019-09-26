@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: "Microsoft YaHei" ! important;
+    font-family: "Microsoft YaHei"!important;
     /* font-size: 2em; */
 
 }
@@ -48,6 +48,7 @@ a:focus {
     background-image: url(../in-images/pc_.pic_hd.jpg);
 
     background-size: 100%;
+    background-repeat: no-repeat;
     height:300px;
     /* width: 100%; */
 }
@@ -56,6 +57,7 @@ a:focus {
     position: relative;
     left: 180px;
     top: 24px;
+    height: 60px;
 }
 
 .wrapper-grid {
@@ -63,7 +65,7 @@ a:focus {
     display: grid;
     grid-template-columns: repeat(2, 330px);
     justify-content: center;
-    grid-gap: 10%;
+    grid-gap: 7%;
 }
 
 .left-side {
@@ -158,6 +160,10 @@ a:focus {
     margin-bottom: 22px;
 }
 
+.article-title{
+    margin-bottom: 20px;
+}
+
 .different-title {
     list-style: none;
 
@@ -183,7 +189,7 @@ a:focus {
     color: white;
 
     display: block;
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -291,9 +297,10 @@ footer p {
 
     #header img {
         /* width: 100%; */
+        
         width: auto;
         height: auto;
-        max-width: 100%;
+        max-width: 20%;
         max-height: 100%;
     }
 
@@ -313,6 +320,10 @@ footer p {
     h5,
     img {
         text-align: center;
+    }
+
+    .article h4 {
+        font-weight: bold;
     }
 
     /* 第一篇文章 */
