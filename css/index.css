@@ -256,8 +256,11 @@ a:focus {
     text-align: center;
 }
 
+.side-toolbar ul {
+    /* padding: 4px 5px; */
+}
 .side-toolbar ul li {
-    padding: 8px 10px;
+    padding: 4px 7px;
     color: white;
 }
 
@@ -269,7 +272,7 @@ a:focus {
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .side-toolbar ul li:hover {
@@ -457,17 +460,22 @@ footer p{
         bottom: 30%;
     }
 
-    .side-toolbar ul li {
-        padding: 4px 6px;
-        color: white;
+    .side-toolbar ul {
+        /* padding: 4px; */
+
     }
 
-    .side-toolbar ul li a {
-        /* display: block;
-        text-decoration: none;
-        color: white; */
-        font-size: 11px;
-    }
+    /* .side-toolbar ul li a {
+ 
+        font-size: 10px;
+    } */
+
+    /* .side-toolbar ul li {
+        padding: 4px 6px;
+        color: white;
+    } */
+
+    
     
     /* .side-toolbar ul {
         list-style: none;
@@ -494,6 +502,9 @@ footer p{
         height: 12px;
         width: 14px;
     }  */
+    .side-toolbar {
+        
+    }
 
     #add-fill-button {
         /* visibility: visible; */
