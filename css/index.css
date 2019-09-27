@@ -25,10 +25,17 @@ footer {
   }
 
 
-
 p {
     font-size: 14px;
     margin-bottom: 1em;
+    
+}
+
+.conventry-info p {
+    color: #424856;
+}
+.pic-middle p {
+    color: #424856;
 }
 
 h4 {
@@ -173,9 +180,6 @@ a:focus {
     margin-bottom: 22px;
 }
 
-.article-title{
-    margin-bottom: 20px;
-}
 
 .different-title {
     list-style: none;
@@ -410,6 +414,10 @@ footer p{
         text-align: center;
     }
 
+    .article-title{
+        margin-bottom: 20px;
+    }
+
     .right-side {
         position: relative;
         text-align: center;
@@ -437,7 +445,7 @@ footer p{
     }
 
     footer {
-        margin-top: 160px;
+        margin-top: 80px;
     }
 
 }
