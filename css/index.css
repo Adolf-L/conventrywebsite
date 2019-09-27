@@ -281,7 +281,7 @@ footer {
     height: 60px;
     background: rgba(236, 236, 236, 1);
 
-    margin-top: 180px;
+    /* margin-top: 180px; */
     
     padding-top: 20px;
 
@@ -329,6 +329,7 @@ footer p{
         grid-template-columns: repeat(1, 100%);
         margin: 0px;
         grid-column: 0px !important;
+        grid-gap: unset;
     }
 
     article h4,
@@ -435,9 +436,8 @@ footer p{
         color: white !important;
     }
 
-    /* footer {
-        margin-top: 155px;
-        bottom: 0;
-    } */
+    footer {
+        margin-top: 160px;
+    }
 
 }
