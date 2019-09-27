@@ -456,6 +456,18 @@ footer p{
         right: 0px;
         bottom: 30%;
     }
+
+    .side-toolbar ul li {
+        padding: 4px 6px;
+        color: white;
+    }
+
+    .side-toolbar ul li a {
+        /* display: block;
+        text-decoration: none;
+        color: white; */
+        font-size: 11px;
+    }
     
     /* .side-toolbar ul {
         list-style: none;
@@ -466,21 +478,13 @@ footer p{
         text-align: center;
     }
     
-    .side-toolbar ul li {
-        padding: 4px 6px;
-        color: white;
-    }
+    
     
     .side-toolbar ul li:focus-within {
         background: #0070BA;
     }
     
-    .side-toolbar ul li a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        font-size: 11px;
-    }
+   
     
     .side-toolbar ul li:hover {
         background: #0070BA;
