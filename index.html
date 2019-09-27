@@ -43,7 +43,7 @@
                     <!-- 文章标题 -->
                     <div class="article-title">
                         <!-- 文章图标标题-->
-                        <h4>考文垂大学</h4>
+                        <h4><strong>考文垂大学</strong></h4>
                         <h5>Conventry University</h5>
 
                     </div>
@@ -93,7 +93,7 @@
                     <div class="article-title">
                         <!-- <img src="./images/conventry-logo-colorful.png" alt="" srcset=""> -->
                         <!-- <span id="">为什么选择考文垂大学</span> -->
-                        <h4>为什么选择考文垂大学</h4>
+                        <h4><strong>为什么选择考文垂大学</strong></h4>
                     </div>
                     <ul class="different-title" id="myTab" role="tablist">
                         <li><a class="active" id="industry-focus" href="#industry-connect" data-toggle="tab" value="industry-focus" onclick="checkFocus(this)">紧密的工业连接</a></li>
@@ -128,7 +128,7 @@
                     <!-- 文章图标标题 -->
                     <!-- <div class="logo-title"> -->
                     <!-- <span id="conventry-title">填写表单</span> -->
-                    <h4 id="form-h4-title">填写表单，加入官方招生群</h4>
+                    <h4 id="form-h4-title"><strong>填写表单，加入官方招生群</strong></h4>
                     <!-- </div> -->
                     <!-- 文章子标题 -->
                     <!-- <h5 id="conventry-subtitle">Fill in Form</h5> -->
@@ -251,6 +251,20 @@
             e.focus();
             console.log(e);
         }
+
+        if(window.screen.height > 1300) {
+            document.body.style.zoom = 1.50;
+            document.body.style.cssText += '; -moz-transform: scale(' + size + ');-moz-transform-origin: 0 0; ';
+        }
+
+
+        if(window.screen.height > 1500) {
+            document.body.style.zoom = 1.50;
+            document.body.style.cssText += '; -moz-transform: scale(' + size + ');-moz-transform-origin: 0 0; '; 
+        }
+        
+
+
     </script>
 </body>
 

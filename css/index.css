@@ -59,19 +59,30 @@ a:focus {
 
     background-size: 100%;
     background-repeat: no-repeat;
-    height:300px;
+    height:250px;
 
     margin-bottom: 20px;
 }
+
+@media (min-width: 1400px){
+    #header {
+        height:320px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #header {
+        height: 400px;
+    }
+}
+
+
 
 #header a img{
     position: absolute;
     left: 50px;
     top: 24px;
-    /* height: 17%; */
-    /* display: block; */
 
-    
 }
 
 #logo-two {
