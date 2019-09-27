@@ -413,9 +413,9 @@ footer p{
         text-align: center;
     }
 
-    .right-side iframe {
-        height: 1500px;
-    }
+    /* .right-side iframe {
+        height: 1500px!important;
+    } */
     
     
 
