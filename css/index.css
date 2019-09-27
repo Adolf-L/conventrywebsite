@@ -281,16 +281,16 @@ footer {
     height: 60px;
     background: rgba(236, 236, 236, 1);
 
-    margin-top: 150px;
+    margin-top: 250px;
     
 
-   padding-top: 20px;
+    padding-top: 20px;
 
 }
 
 footer p{
     font-size: 8px;
-    color: #999999;
+    color: #a01a1a;
 }
 
 
