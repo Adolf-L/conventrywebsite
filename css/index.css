@@ -413,6 +413,12 @@ footer p{
         text-align: center;
     }
 
+    .right-side iframe {
+        height: 1500px;
+    }
+    
+    
+
     #form-title {
         background-color: #0070BA;
         padding: 5px;
