@@ -141,9 +141,9 @@
 
         <!--浮动条  -->
         <div class="side-toolbar">
-            <img id="side-bar-pic-one" src="" alt="" srcset="" style="height:114px; width:114px;" hidden>
+            <img id="side-bar-pic-one" src="" alt="" srcset="" style="height:140px; width:114px;" hidden>
             <img id="side-bar-pic-two" src="" alt="" srcset="" style="height:114px; width:114px;" hidden>
-            <a><img id="side-bar-pic-three" src="./in-images/wechat-qr.png" alt="" srcset="" style="height:114px; width:114px;" hidden></a>
+            <a><img id="side-bar-pic-three" src="./in-images/wechat-qr.png" alt="" srcset="" style="height:160px; width:160px;" hidden></a>
             <ul>
                 <li id="side-li-one" style="background-color: #0070BA;"><a href="#">关注<br>我们</a></li>
                 <li id="side-li-two"><a href="https://weibo.com/coventryuniversity"><img src="./in-images/微博.png" alt="" srcset=""><br>微博</a></li>
@@ -156,12 +156,16 @@
   <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="一些内容" data-placement="left">鼠标移动到我这</a>
 </div> -->
 
+    <div id="add-fill-button">
+        <a href="#form-title" class="btn btn-primary btn-lg btn-block">填写表单</a>
+    </div>
+
         <!-- 页脚 -->
         <footer class="footer">
+            <a href="https://www.coventryuniversity.cn/">使用条框</a>
             <p>地址：英国考文垂大学中国办公室 - 北京市朝阳区朝阳门外大街甲6号万通中心C座1807室 <br>
                 邮编：100020 电话：010-5907 0972/ 010-5907 0302</p>
         </footer>
-
     </div>
 
     <!-- 底部脚步加载 -->
@@ -217,9 +221,10 @@
             document.body.style.zoom = "125%";
         }
 
+//      点击查看二维码
         function openOrcloseWechat() {
             var btn = document.getElementById('side-li-three');
-            // console.log(btn);
+            console.log(btn);
             var isFocus = $("side-li-three").is("focus");
 
             if (isFocus == true) {
